@@ -34,6 +34,7 @@ Tip: `/statusline` inside Claude Code can also set this up for you.
 | Template | Description |
 | --- | --- |
 | [`user-dir-branch`](templates/user-dir-branch/) | Username, current directory (`~` for home), and git branch — a zsh-style prompt. |
+| [`dir-branch-context`](templates/dir-branch-context/) | Current directory, git branch, and context window usage percentage. |
 
 ## Contributing
 

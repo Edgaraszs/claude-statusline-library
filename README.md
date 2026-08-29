@@ -34,8 +34,6 @@ From a clone:
 | `--no-settings` | Copy the script, leave `settings.json` alone. |
 | `-y`, `--yes` | Don't prompt. |
 
-Restart Claude Code afterwards. Needs `jq` (so do the templates themselves).
-
 ## Manual usage
 
 1. Pick a template from [`templates/`](templates/).
@@ -58,8 +56,6 @@ Restart Claude Code afterwards. Needs `jq` (so do the templates themselves).
    ```
 
 4. Restart Claude Code.
-
-Tip: `/statusline` inside Claude Code can also set this up for you.
 
 ## Templates
 

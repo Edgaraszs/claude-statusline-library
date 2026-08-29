@@ -1,5 +1,7 @@
 # Claude Code Statusline Library
 
+![Claude Code Statusline Library](assets/statusline-library-banner.png)
+
 A public, community-driven collection of [status line](https://code.claude.com/docs/en/statusline) templates for [Claude Code](https://claude.com/claude-code).
 
 Grab one, drop it in your config, done. Or contribute your own.

@@ -86,4 +86,4 @@ New templates welcome.
 
 ## License
 
-MIT
+[MIT](LICENSE)

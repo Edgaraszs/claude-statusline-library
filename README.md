@@ -6,7 +6,37 @@ A public, community-driven collection of [status line](https://code.claude.com/d
 
 Grab one, drop it in your config, done. Or contribute your own.
 
-## Usage
+## Install
+
+The installer copies a template to `~/.claude/statusline.sh` and points your `settings.json` at it. It shows a preview and asks before writing anything.
+
+```bash
+# Interactive picker
+curl -fsSL https://raw.githubusercontent.com/Edgaraszs/claude-statusline-library/main/install.sh | bash
+
+# Or install a specific template straight away
+curl -fsSL https://raw.githubusercontent.com/Edgaraszs/claude-statusline-library/main/install.sh | bash -s -- rate-limit
+```
+
+From a clone:
+
+```bash
+./install.sh                 # interactive picker
+./install.sh rate-limit      # by name
+./install.sh --list          # see what's available
+```
+
+| Option | What it does |
+| --- | --- |
+| `-l`, `--list` | List templates and exit. |
+| `-t`, `--target PATH` | Where to write the script (default `~/.claude/statusline.sh`). |
+| `-s`, `--settings PATH` | Which `settings.json` to update (default `~/.claude/settings.json`). |
+| `--no-settings` | Copy the script, leave `settings.json` alone. |
+| `-y`, `--yes` | Don't prompt. |
+
+Restart Claude Code afterwards. Needs `jq` (so do the templates themselves).
+
+## Manual usage
 
 1. Pick a template from [`templates/`](templates/).
 2. Copy its script somewhere stable, e.g. `~/.claude/statusline.sh`:
@@ -47,7 +77,8 @@ New templates welcome.
 2. Add `statusline.sh` (or a script in any language — just make it executable and self-contained).
 3. Add a short `README.md` in the folder: what it shows, a screenshot or sample output, and any dependencies.
 4. Add a row to the table above.
-5. Open a pull request.
+5. Add a `name|description` line to `TEMPLATE_META` in [`install.sh`](install.sh) so the installer can offer it remotely.
+6. Open a pull request.
 
 ### Guidelines
 
